@@ -1,0 +1,75 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>br.furb.api</groupId>
+  <artifactId>furb-speech</artifactId>
+  <version>0.0.1</version>
+  <name>FurbSpeech</name>
+  <description>FurbSpeech is an API to easy transform text in speech.</description>
+  <developers>
+  	<developer>
+  		<id>germano</id>
+  		<name>Germano Fronza</name>
+      	<email>germano.inf@gmail.com</email>
+  	</developer>
+  	<developer>
+  		<id>israel</id>
+  		<name>Israel Damásio Medeiros</name>
+      	<email>israel.damasio@gmail.com</email>
+  	</developer>
+  </developers>
+  <ciManagement>
+	<system>continuum</system>
+	<url>http://localhost:8080/continuum</url>
+	<notifiers>
+	    <notifier>
+	      <type>mail</type>
+	      <sendOnError>true</sendOnError>
+	      <sendOnFailure>true</sendOnFailure>
+	      <sendOnSuccess>true</sendOnSuccess>
+	      <sendOnWarning>true</sendOnWarning>
+		      
+	      <configuration>
+	        <address>germano</address>
+	      </configuration>
+	    </notifier>
+	    <notifier>
+	      <type>mail</type>
+	      <sendOnError>true</sendOnError>
+	      <sendOnFailure>true</sendOnFailure>
+	      <sendOnSuccess>true</sendOnSuccess>
+	      <sendOnWarning>true</sendOnWarning>
+		      
+	      <configuration>
+	        <address>israel</address>
+	      </configuration>
+	    </notifier>
+	</notifiers>
+  </ciManagement>
+  <packaging>jar</packaging>
+  <dependencies>
+  	<dependency>
+	    <groupId>log4j</groupId>
+	    <artifactId>log4j</artifactId>
+	    <version>1.2.9</version>
+	</dependency>  
+	<dependency>
+	    <groupId>junit</groupId>
+	    <artifactId>junit</artifactId>
+	    <version>4.5</version>
+	    <scope>test</scope>
+	</dependency>
+  </dependencies>
+  
+  <build>
+	  <plugins>
+	    <plugin>
+	      <groupId>org.apache.maven.plugins</groupId>
+	      <artifactId>maven-compiler-plugin</artifactId>
+	      <configuration>
+	        <target>1.5</target>
+	        <source>1.5</source>
+	      </configuration>
+	    </plugin>
+	  </plugins>
+	</build>
+</project>
